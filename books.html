@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Dashboard | Books</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+   <nav class="navbar has-shadow">
+       <div class="navbar-brand">
+           <a href="index.html" class="navbar-item">
+               <img src="img/logo.png" alt="">
+           </a>
+           <div class="navbar-burger">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </div>
+       <div class="navbar-menu">
+           <div class="navbar-start">
+               <div class="navbar-item">
+                   <small>Designing with intuition &amp; purpose</small>
+               </div>
+           </div>
+           <div class="navbar-end">
+               <div class="navbar-item has-dropdown is-hoverable">
+                   <div class="navbar-link">
+                       Efosa Michael
+                   </div>
+                   <div class="navbar-dropdown">
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-user-o"></i>
+                               </span>
+                               Profile
+                           </div>
+                       </a>
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-bug"></i>
+                               </span>
+                               Report Bug
+                           </div>
+                       </a>
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-sign-out"></i>
+                               </span>
+                               Sign Out
+                           </div>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </nav>
+   
+   <section class="section">
+       <div class="columns">
+           <!-- LEFT COLUMN -->
+           <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+               <nav class="menu">
+                   <p class="menu-label">Menu</p>
+                   <ul class="menu-list">
+                       <li>
+                           <a href="dashboard.html">
+                               <span class="icon"><i class="fa fa-tachometer"></i></span>Dashboard
+                           </a>
+                       </li>
+                       <li>
+                           <a href="books.html" class="is-active">
+                               <span class="icon"><i class="fa fa-book"></i></span>Books
+                           </a>
+                       </li>
+                       <li>
+                           <a href="customers.html">
+                               <span class="icon"><i class="fa fa-address-book"></i></span>Customers
+                           </a>
+                       </li>
+                       <li>
+                           <a href="orders.html">
+                               <span class="icon"><i class="fa fa-file-text-o"></i></span>Orders
+                           </a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+           <!-- RIGHT COLUMN -->
+           <div class="column">
+               <h1 class="title">Books for frameworks</h1>
+               <nav class="level">
+                   <div class="level-left">
+                       <div class="level-item">
+                           <p class="subtitle is-5"><strong>6</strong> Books</p>
+                       </div>
+                       <p class="level-item">
+                           <a href="new-book.html" class="button is-success">New</a>
+                       </p>
+                       <div class="level-item is-hidden-table-only">
+                           <div class="field has-addons">
+                               <p class="control">
+                                   <input type="text" class="input" placeholder="Book name, ISBN...">
+                               </p>
+                               <p class="control">
+                                   <button class="button">Search</button>
+                               </p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="level-right">
+                       <div class="level-item">
+                           Order By
+                       </div>
+                       <div class="level-item">
+                           <div class="select">
+                               <select>
+                                   <option>Publish date</option>
+                                   <option>Price</option>
+                                   <option>Page count</option>
+                               </select>
+                           </div>
+                       </div>
+                   </div>
+               </nav>
+               
+               <div class="columns is-multiline">
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/bulma.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">Bulma for cutting edge user interfaces</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$22.99</p>
+                                   <div class="content is-small">
+                                       270 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/docker.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">Docker for modern software development</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$22.99</p>
+                                   <div class="content is-small">
+                                       130 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/django-icon.jpg" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">Python framework with batteries included</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$31.00</p>
+                                   <div class="content is-small">
+                                       341 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/gatsby.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">JAMstack with speed at its core</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$19.99</p>
+                                   <div class="content is-small">
+                                       190 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                        <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/flutter.png" alt="Flutter" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">One codebase, Android &amp; IOS</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$22.99</p>
+                                   <div class="content is-small">
+                                       97 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/nuxt-icon.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">Vue JS on steroids</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$16.90</p>
+                                   <div class="content is-small">
+                                       102 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/symfony.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">High perfomance PHP framework</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$16.90</p>
+                                   <div class="content is-small">
+                                       215 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/laravel.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">Love beautiful code, we do too!</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$16.90</p>
+                                   <div class="content is-small">
+                                       300 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+                   <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                       <article class="box">
+                           <div class="media">
+                               <aside class="media-left">
+                                   <img src="img/angular.png" alt="Bulma" width="100">
+                               </aside>
+                               <div class="media-content">
+                                   <p class="title is-5 is-spaced is-marginless">
+                                       <a href="edit-book.html">One framework, mobile &amp; desktop</a>
+                                   </p>
+                                   <p class="subtitle is-marginless">$16.90</p>
+                                   <div class="content is-small">
+                                       102 pages
+                                       <br>
+                                       ISBN: 9781939902351
+                                       <br>
+                                       <a href="edit-book.html">Edit</a>
+                                       <span>.</span>
+                                       <a>Delete</a>
+                                   </div>
+                               </div>
+                           </div>
+                       </article>
+                   </div>
+               </div> <!-- IS MULTILINE -->
+               
+               <nav class="pagination">
+                   <a href="#" class="pagination-previous">Previous</a>
+                   <a href="#" class="pagination-next">Next</a>
+                   <ul class="pagination-list">
+                       <li><a href="#" class="pagination-link">1</a></li>
+                       <li><span class="pagination-ellipsis">&hellip;</span></li>
+                       <li><a href="#" class="pagination-link">30</a></li>
+                       <li><a href="#" class="pagination-link">45</a></li>
+                       <li><a href="#" class="pagination-link">52</a></li>
+                       <li><span class="pagination-ellipsis">&hellip;</span></li>
+                       <li><a href="#" class="pagination-link">86</a></li>
+                   </ul>
+               </nav>
+           </div>
+           
+       </div>
+   </section>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulma Dashboard | Edit Customer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+   <nav class="navbar has-shadow">
+       <div class="navbar-brand">
+           <a href="index.html" class="navbar-item">
+               <img src="img/logo.png" alt="">
+           </a>
+           <div class="navbar-burger">
+               <span></span>
+               <span></span>
+               <span></span>
+           </div>
+       </div>
+       <div class="navbar-menu">
+           <div class="navbar-start">
+               <div class="navbar-item">
+                   <small>Designing with intuition &amp; purpose</small>
+               </div>
+           </div>
+           <div class="navbar-end">
+               <div class="navbar-item has-dropdown is-hoverable">
+                   <div class="navbar-link">
+                       Efosa Michael
+                   </div>
+                   <div class="navbar-dropdown">
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-user-o"></i>
+                               </span>
+                               Profile
+                           </div>
+                       </a>
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-bug"></i>
+                               </span>
+                               Report Bug
+                           </div>
+                       </a>
+                       <a href="" class="navbar-item">
+                           <div>
+                               <span class="icon is-small">
+                                   <i class="fa fa-sign-out"></i>
+                               </span>
+                               Sign Out
+                           </div>
+                       </a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </nav>
+   
+   <section class="section">
+       <div class="columns">
+           <!-- LEFT COLUMN -->
+           <div class="column is-4-tablet is-3-desktop is-2-widescreen">
+               <nav class="menu">
+                   <p class="menu-label">Menu</p>
+                   <ul class="menu-list">
+                       <li>
+                           <a href="dashboard.html">
+                               <span class="icon"><i class="fa fa-tachometer"></i></span>Dashboard
+                           </a>
+                       </li>
+                       <li>
+                           <a href="books.html">
+                               <span class="icon"><i class="fa fa-book"></i></span>Books
+                           </a>
+                       </li>
+                       <li>
+                           <a href="customers.html" class="is-active">
+                               <span class="icon"><i class="fa fa-address-book"></i></span>Customers
+                           </a>
+                       </li>
+                       <li>
+                           <a href="orders.html">
+                               <span class="icon"><i class="fa fa-file-text-o"></i></span>Orders
+                           </a>
+                       </li>
+                   </ul>
+               </nav>
+           </div>
+           <!-- RIGHT COLUMN -->
+           <div class="column">
+               <nav class="breadcrumb">
+                   <ul>
+                       <li><a href="customers.html">Customers</a></li>
+                       <li class="is-active"><a href="edit-customer.html">Edit customer</a></li>
+                   </ul>
+               </nav>
+               
+               <form action="customers.html">
+                   <div class="field">
+                       <label for="" class="label">Full Name</label>
+                       <div class="control">
+                           <input type="text" class="input is-large" placeholder="William Danfo" value="William Danfo" required>
+                       </div>
+                   </div>
+                   <div class="field">
+                       <label for="email" class="label">Email</label>
+                       <div class="control has-icons-left">
+                           <input type="email" class="input" placeholder="e.g. willdanfo@gmail.com" value="willdanfo@gmail.com" required>
+                           <span class="icon is-small is-left">
+                               <i class="fa fa-envelope"></i>
+                           </span>
+                       </div>
+                   </div>
+                   <div class="field">
+                       <label for="address" class="label">Address</label>
+                       <div class="control">
+                           <input type="text" class="input" placeholder="House number and street name" value="124 melbourn avenue" required>
+                       </div>
+                   </div>
+                   <div class="field">
+                       <div class="control">
+                           <input type="text" class="input" placeholder="Second address line (optional)">
+                       </div>
+                   </div>
+                   <div class="columns is-multiline">
+                       <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                           <label for="zipcode" class="label">Postcode / Zipcode</label>
+                           <div class="control">
+                               <input type="text" class="input" placeholder="e.g. 67200" value="AO22JS" required>
+                           </div>
+                       </div>
+                       <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                           <label for="city" class="label">City</label>
+                           <div class="control">
+                               <input type="text" class="input" placeholder="e.g. San Francisco" value="Leeds" required>
+                           </div>
+                       </div>
+                       <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                           <label for="country" class="label">Country</label>
+                           <div class="control">
+                               <div class="select">
+                                   <select name="" id="">
+                                       <option value="">-- Choose a country --</option>
+                                       <option value="">Canada</option>
+                                       <option value="">United States</option>
+                                       <option value="" selected>United Kingdom</option>
+                                   </select>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="field">
+                   <div class="buttons">
+                       <button class="button is-medium is-primary">Save Changes</button>
+                       <button class="button is-medium is-light">Cancel</button>
+                   </div>
+                   </div>
+               </form>
+               
+           </div>
+           
+           <!-- END RIGHT COLUMN -->
+           
+       </div>
+   </section>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
